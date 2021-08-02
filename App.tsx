@@ -8,6 +8,9 @@ import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
 import {NativeBaseProvider} from 'native-base';
 import FirstComp from './MyComponents/activityset';
+import SecondComp from './MyComponents/session';
+import ThirdComp from './MyComponents/plan';
+import Thirdwhy from './MyComponents/planwhy';
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
@@ -18,7 +21,7 @@ export default function App() {
     return (
       <SafeAreaProvider>
         <NativeBaseProvider>
-       <FirstComp/>
+       <Thirdwhy/>
        </NativeBaseProvider>
       </SafeAreaProvider>
     );
